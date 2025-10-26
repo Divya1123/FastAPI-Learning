@@ -36,4 +36,4 @@ def predict(data: request_body):
         data.petal_width
     ]]
     class_idx = model.predict(test_data)[0]
-    return {"class_name": class_names[class_idx], "class_index": class_idx}
+    return {"class_name": class_names[class_idx], "class_index": class_idx} # this is the response body - must follow response structure
